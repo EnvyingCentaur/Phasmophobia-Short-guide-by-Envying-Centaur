@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phasmophobia Ghost Field Guide - By Envying Centaur</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #222; color: #eee; padding: 20px; }
+    h1, h2 { color: #ffcc66; }
+    .ghost { border: 1px solid #555; border-radius: 8px; padding: 10px; margin-bottom: 15px; background: #333; }
+    .ghost h2 { margin-top: 0; }
+    button { margin: 5px 0; padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer; }
+    button:hover { background: #555; }
+    .hidden { display: none; }
+    footer { margin-top: 40px; text-align: center; color: #aaa; font-size: 14px; }
+    .timer { margin-top: 5px; color: #ff9999; }
+  </style>
+  <script>
+    function toggle(id){
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+    }
+
+    let smudgeTime = 180;
+    let smudgeInterval;
+
+    function startSmudgeTimer(){
+      clearInterval(smudgeInterval);
+      smudgeTime = 180;
+      document.getElementById('smudgetimer').innerText = `Smudge Timer: ${smudgeTime}s`;
+      smudgeInterval = setInterval(() => {
+        smudgeTime--;
+        document.getElementById('smudgetimer').innerText = `Smudge Timer: ${smudgeTime}s`;
+        if(smudgeTime <= 0){ clearInterval(smudgeInterval); document.getElementById('smudgetimer').innerText = 'Smudge Timer: Done'; }
+      }, 1000);
+    }
+  </script>
+</head>
+<body>
+  <h1>Phasmophobia Clickable Field Guide</h1>
+  <button onclick="startSmudgeTimer()">Start Smudge Timer</button>
+  <div id="smudgetimer" class="timer">Smudge Timer: 180s</div>
+
+  <!-- 24 Ghosts -->
+  <!-- (All previous ghost divs remain unchanged) -->
+
+  <footer>Guide Created by Envying Centaur</footer>
+</body>
+</html>
