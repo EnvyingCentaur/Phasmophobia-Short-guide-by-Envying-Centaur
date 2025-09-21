@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phasmophobia Ghost Field Guide - By Envying Centaur</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #222; color: #eee; padding: 20px; }
+    h1, h2 { color: #ffcc66; }
+    .ghost { border: 1px solid #555; border-radius: 8px; padding: 10px; margin-bottom: 15px; background: #333; }
+    .ghost h2 { margin-top: 0; }
+    button { margin: 5px 0; padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer; }
+    button:hover { background: #555; }
+    .hidden { display: none; }
+    footer { margin-top: 40px; text-align: center; color: #aaa; font-size: 14px; }
+  </style>
+  <script>
+    function toggle(id){
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body>
+  <h1>Phasmophobia Clickable Field Guide</h1>
+
+  <!-- 24 Ghosts -->
+  <div class="ghost"><h2>Spirit</h2><button onclick="toggle('spirit')">Toggle Details</button><div id="spirit" class="hidden"><p><strong>Evidence:</strong> EMF 5, Spirit Box, Ghost Writing</p><p><strong>Behavior:</strong> Standard ghost</p><p><strong>Test:</strong> Smudge sticks last longer</p><p><strong>Special Traits:</strong> Longer smudge stick effect</p></div></div>
+  <div class="ghost"><h2>Wraith</h2><button onclick="toggle('wraith')">Toggle Details</button><div id="wraith" class="hidden"><p><strong>Evidence:</strong> EMF 5, Spirit Box, DOTS</p><p><strong>Behavior:</strong> No footsteps</p><p><strong>Test:</strong> Step in salt test</p><p><strong>Special Traits:</strong> Teleports randomly</p></div></div>
+  <div class="ghost"><h2>Phantom</h2><button onclick="toggle('phantom')">Toggle Details</button><div id="phantom" class="hidden"><p><strong>Evidence:</strong> Spirit Box, DOTS, Fingerprints</p><p><strong>Behavior:</strong> Photo causes disappearance</p><p><strong>Test:</strong> Take photo test</p><p><strong>Special Traits:</strong> Drains double sanity when seen</p></div></div>
+  <div class="ghost"><h2>Poltergeist</h2><button onclick="toggle('poltergeist')">Toggle Details</button><div id="poltergeist" class="hidden"><p><strong>Evidence:</strong> Spirit Box, Ghost Writing, Fingerprints</p><p><strong>Behavior:</strong> Throws multiple objects</p><p><strong>Test:</strong> Observe object throws</p><p><strong>Special Traits:</strong> Most effective in rooms with objects</p></div></div>
+  <div class="ghost"><h2>Banshee</h2><button onclick="toggle('banshee')">Toggle Details</button><div id="banshee" class="hidden"><p><strong>Evidence:</strong> DOTS, Ghost Orb, Fingerprints</p><p><strong>Behavior:</strong> Hunts single target</p><p><strong>Test:</strong> Parabolic mic</p><p><strong>Special Traits:</strong> Ignores non-target players</p></div></div>
+  <div class="ghost"><h2>Jinn</h2><button onclick="toggle('jinn')">Toggle Details</button><div id="jinn" class="hidden"><p><strong>Evidence:</strong> EMF 5, Freezing, Fingerprints</p><p><strong>Behavior:</strong> Moves faster with breaker on</p><p><strong>Test:</strong> Watch speed bursts</p><p><strong>Special Traits:</strong> Cannot turn off breaker</p></div></div>
+  <div class="ghost"><h2>Mare</h2><button onclick="toggle('mare')">Toggle Details</button><div id="mare" class="hidden"><p><strong>Evidence:</strong> Spirit Box, Ghost Orb, Ghost Writing</p><p><strong>Behavior:</strong> More active in dark</p><p><strong>Test:</strong> Observe light interaction</p><p><strong>Special Traits:</strong> Cannot turn lights on</p></div></div>
+  <div class="ghost"><h2>Revenant</h2><button onclick="toggle('revenant')">Toggle Details</button><div id="revenant" class="hidden"><p><strong>Evidence:</strong> Freezing, Ghost Orb, Ghost Writing</p><p><strong>Behavior:</strong> Extremely fast when seeing a player</p><p><strong>Test:</strong> Slow wander / fast chase</p><p><strong>Special Traits:</strong> Deadliest when chasing</p></div></div>
+  <div class="ghost"><h2>Shade</h2><button onclick="toggle('shade')">Toggle Details</button><div id="shade" class="hidden"><p><strong>Evidence:</strong> EMF 5, Ghost Writing, Freezing</p><p><strong>Behavior:</strong> Shy</p><p><strong>Test:</strong> Hunts at lower sanity</p><p><strong>Special Traits:</strong> Rarely seen in groups</p></div></div>
+  <div class="ghost"><h2>Demon</h2><button onclick="toggle('demon')">Toggle Details</button><div id="demon" class="hidden"><p><strong>Evidence:</strong> Freezing, Ghost Writing, Fingerprints</p><p><strong>Behavior:</strong> Aggressive</p><p><strong>Test:</strong> Crucifix effective 5m</p><p><strong>Special Traits:</strong> Hunts at very low sanity</p></div></div>
+  <div class="ghost"><h2>Yurei</h2><button onclick="toggle('yurei')">Toggle Details</button><div id="yurei" class="hidden"><p><strong>Evidence:</strong> Freezing, Ghost Orb, DOTS</p><p><strong>Behavior:</strong> Strong sanity drain</p><p><strong>Test:</strong> Smudge prevents roaming</p><p><strong>Special Traits:</strong> Can trap players by closing doors</p></div></div>
+  <div class="ghost"><h2>Oni</h2><button onclick="toggle('oni')">Toggle Details</button><div id="oni" class="hidden"><p><strong>Evidence:</strong> EMF 5, Freezing, DOTS</p><p><strong>Behavior:</strong> More active near multiple players</p><p><strong>Test:</strong> Throws objects</p><p><strong>Special Traits:</strong> Cannot do airball events</p></div></div>
+  <div class="ghost"><h2>Hantu</h2><button onclick="toggle('hantu')">Toggle Details</button><div id="hantu" class="hidden"><p><strong>Evidence:</strong> Freezing, Ghost Orb, Fingerprints</p><p><strong>Behavior:</strong> Moves faster in cold</p><p><strong>Test:</strong> Foggy breath visible</p><p><strong>Special Traits:</strong> Slower in warm areas</p></div></div>
+  <div class="ghost"><h2>Yokai</h2><button onclick="toggle('yokai')">Toggle Details</button><div id="yokai" class="hidden"><p><strong>Evidence:</strong> Spirit Box, Ghost Orb, DOTS</p><p><strong>Behavior:</strong> Hunts if players talk near it</p><p><strong>Test:</strong> Voice chat triggers hunts</p><p><strong>Special Traits:</strong> Limited hearing range</p></div></div>
+  <div class="ghost"><h2>Goryo</h2><button onclick="toggle('goryo')">Toggle Details</button><div id="goryo" class="hidden"><p><strong>Evidence:</strong> EMF 5, DOTS, Fingerprints</p><p><strong>Behavior:</strong> Only shows DOTS on camera</p><p><strong>Test:</strong> Camera DOTS test</p><p><strong>Special Traits:</strong> Rarely changes rooms</p></div></div>
+  <div class="ghost"><h2>Myling</h2><button onclick="toggle('myling')">Toggle Details</button><div id="myling" class="hidden"><p><strong>Evidence:</strong> EMF 5, Ghost Writing, Fingerprints</p><p><strong>Behavior:</strong> Quiet footsteps</p><p><strong>Test:</strong> Parabolic mic test</p><p><strong>Special Traits:</strong> Harder to hear during hunts</p></div></div>
+  <div class="ghost"><h2>Onryo</h2><button onclick="toggle('onryo')">Toggle Details</button><div id="onryo" class="hidden"><p><strong>Evidence:</strong> Spirit Box, Ghost Orb, Freezing</p><p><strong>Behavior:</strong> Triggered by candles</p><p><strong>Test:</strong> Blow out candle</p><p><strong>Special Traits:</strong> Cannot turn on lights</p></div></div>
+  <div class="ghost"><h2>The Twins</h2><button onclick="toggle('twins')">Toggle Details</button><div id="twins" class="hidden"><p><strong>Evidence:</strong> EMF 5, Spirit Box, Freezing</p><p><strong>Behavior:</strong> Two ghosts act independently</p><p><strong>Test:</strong> Observe two locations</p><p><strong>Special Traits:</strong> Simultaneous activity</p></div></div>
+  <div class="ghost"><h2>Raiju</h2><button onclick="toggle('raiju')">Toggle Details</button><div id="raiju" class="hidden"><p><strong>Evidence:</strong> EMF 5, Ghost Orb, DOTS</p><p><strong>Behavior:</strong> Faster near electronics</p><p><strong>Test:</strong> Observe electronics interaction</p><p><strong>Special Traits:</strong> Can disrupt electronics from afar</p></div></div>
+  <div class="ghost"><h2>Obake</h2><button onclick="toggle('obake')">Toggle Details</button><div id="obake" class="hidden"><p><strong>Evidence:</strong> EMF 5, Ghost Orb, Fingerprints</p><p><strong>Behavior:</strong> Leaves abnormal fingerprints</p><p><strong>Test:</strong> Six-finger or disappearing prints</p><p><strong>Special Traits:</strong> Can shapeshift</p></div></div>
+  <div class="ghost"><h2>The Mimic</h2><button onclick="toggle('mimic')">Toggle Details</button><div id="mimic" class="hidden"><p><strong>Evidence:</strong> Spirit Box, Freezing, Fingerprints</p><p><strong>Behavior:</strong> Copies traits of other ghosts</p><p><strong>Test:</strong> Observe fake Ghost Orbs</p><p><strong>Special Traits:</strong> Unpredictable mimicry</p></div></div>
+  <div class="ghost"><h2>Moroi</h2><button onclick="toggle('moroi')">Toggle Details</button><div id="moroi" class="hidden"><p><strong>Evidence:</strong> Spirit Box, Freezing, Ghost Writing</p><p><strong>Behavior:</strong> Stronger at low sanity</p><p><strong>Test:</strong> Spirit Box curse</p><p><strong>Special Traits:</strong> Hunts faster at low sanity</p></div></div>
+  <div class="ghost"><h2>Deogen</h2><button onclick="toggle('deogen')">Toggle Details</button><div id="deogen" class="hidden"><p><strong>Evidence:</strong> Spirit Box, Ghost Writing, DOTS</p><p><strong>Behavior:</strong> Knows player location</p><p><strong>Test:</strong> Observe speed changes</p><p><strong>Special Traits:</strong> Cannot lose track of players</p></div></div>
+  <div class="ghost"><h2>Thaye</h2><button onclick="toggle('thaye')">Toggle Details</button><div id="thaye" class="hidden"><p><strong>Evidence:</strong> Ghost Writing, Ghost Orb, DOTS</p><p><strong>Behavior:</strong> Active early, weakens over time</p><p><strong>Test:</strong> Observe activity decay</p><p><strong>Special Traits:</strong> Ages over time</p></div></div>
+
+  <footer>Guide Created by Envying Centaur</footer>
+</body>
+</html>
